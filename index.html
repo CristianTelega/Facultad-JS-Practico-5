@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Api Empleados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Empleados</h1>
+
+        <div id="creacionEmpleados" class="form-container">
+            <h2>Agregar Empleados</h2>
+            <form id="formularioEmpleado">
+                <input type="text" id="nombreEmpleado" placeholder="Nombre" required>
+                <input type="text" id="apellidoEmpleado" placeholder="Apellido" required>
+                <input type="email" id="emailEmpleado" placeholder="E-mail" required>
+                <select id="companySelect" required></select>
+                <button type="submit">Agregar Empleado</button>
+            </form>
+        </div>
+
+        <div id="empleadosTabla" class="table-container">
+            <h2>Empleados</h2>
+            <table id="tablaEmpleados">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Compañía</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
